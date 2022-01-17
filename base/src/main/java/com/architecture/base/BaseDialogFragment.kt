@@ -4,10 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.fragment.app.DialogFragment
 import androidx.viewbinding.ViewBinding
 
-abstract class BaseFragment<VB: ViewBinding>: Fragment() {
+/**
+ *     author : wnq
+ *     time   : 2022/01/17
+ *     desc   :
+ */
+abstract class BaseDialogFragment<VB: ViewBinding>: DialogFragment() {
+
     val binding: VB
         get() = _binding!!
     private var _binding: VB? = null
