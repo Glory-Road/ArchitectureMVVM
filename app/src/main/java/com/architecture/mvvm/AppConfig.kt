@@ -5,5 +5,7 @@ package com.architecture.mvvm
  *     time   : 2022/01/17
  *     desc   :
  */
-class AppConfig {
+object AppConfig {
+
+    const val BASE_URL = "https://wanandroid.com/"
 }

@@ -13,6 +13,7 @@ class LoggingInterceptor: Interceptor {
         val response = chain.proceed(request)
         val t2 = System.nanoTime()
         logV(TAG, "Received response for ${response.request.url} in ${(t2 - t1) / 1e6} ms\n${response.headers}")
+        logV(TAG, "\n${response.body?.string()}")
         return response
     }
 

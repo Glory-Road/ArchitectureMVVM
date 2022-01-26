@@ -1,11 +1,15 @@
 package com.architecture.data.net
 
+import android.util.Log
+import com.architecture.data.BuildConfig
 import com.architecture.data.net.intercepter.LoggingInterceptor
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
 
 internal val apiService: ApiService by lazy {
-    ApiClient.INSTANCE.getApi(ApiService::class.java, "")
+    ApiClient.INSTANCE.getApi(ApiService::class.java, "https://wanandroid.com/")
 }
 class ApiClient {
     companion object {
@@ -17,6 +21,7 @@ class ApiClient {
     fun <T> getApi(serviceClass: Class<T>, baseUrl: String): T {
         val retrofitBuilder = Retrofit.Builder()
             .baseUrl(baseUrl)
+            .addConverterFactory(MoshiConverterFactory.create())
             .client(okHttpClient)
         return setRetrofitBuilder(retrofitBuilder).build().create(serviceClass)
     }
@@ -34,7 +39,7 @@ class ApiClient {
 
     private fun setHttpClientBuilder(builder: OkHttpClient.Builder): OkHttpClient.Builder {
         builder.apply {
-            addInterceptor(LoggingInterceptor())
+            addInterceptor(HttpLoggingInterceptor { Log.i("CoinWallet network", it) }.setLevel(if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE))
         }
         return builder
     }
