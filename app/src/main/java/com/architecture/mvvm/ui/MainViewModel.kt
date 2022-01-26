@@ -10,6 +10,7 @@ import com.architecture.mvvm.repository.RepositoryProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
 
 /**
@@ -24,15 +25,22 @@ class MainViewModel : BaseViewModel() {
 
     fun main() = viewModelScope.launch {
         repository.main()
+            .onStart {
+                livedata.value = ComponentState.Loading()
+            }
             .catch {
                 Log.e("WNQ", it.message, it)
                 livedata.value = ComponentState.Error(11, "222")
             }
             .collectLatest {
                 if (it.errorCode == 200) {
-                    livedata.value = ComponentState.Success(it.data)
+                    if (it.data.isEmpty()) {
+                        livedata.value = ComponentState.Empty()
+                    } else {
+                        livedata.value = ComponentState.Success(it.data)
+                    }
                 } else {
-                    livedata.value = ComponentState.Empty()
+                    livedata.value = ComponentState.Error(11, "222")
                 }
             }
     }
