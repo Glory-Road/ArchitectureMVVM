@@ -11,10 +11,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ArchitectureMVVM">
+        android:theme="@style/AppTheme.TranslucentStatusBar">
         <activity
-            android:name=".ui.MainActivity"
-            android:exported="true">
+            android:name=".app.main.MainActivity"
+            android:exported="true"
+            android:theme="@style/MaterialTheme.TranslucentStatusBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

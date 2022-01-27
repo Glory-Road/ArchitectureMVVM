@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DefaultStatusStyle">
+        <item name="emptyLayout">@layout/state_layout_empty</item>
+        <item name="errorLayout">@layout/state_layout_error</item>
+        <item name="loadingLayout">@layout/state_layout_loading</item>
+        <item name="defaultShow">LOADING</item>
+    </style>
+</resources>

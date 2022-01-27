@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatusLayout">
+        <attr name="loadingLayout" format="reference" />
+        <attr name="emptyLayout" format="reference" />
+        <attr name="errorLayout" format="reference" />
+        <attr name="emptyRecommendLayout" format="reference" />
+        <attr name="defaultShow" format="enum">
+            <enum name="LOADING" value="0" />
+            <enum name="EMPTY" value="1" />
+            <enum name="ERROR" value="2" />
+            <enum name="CONTENT" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

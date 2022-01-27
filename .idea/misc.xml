@@ -3,7 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_featured.xml" value="0.24259259259259258" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_featured_selector.xml" value="0.24259259259259258" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_featured_unselector.xml" value="0.23796296296296296" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_genres.xml" value="0.24259259259259258" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_genres_selected.xml" value="0.24259259259259258" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_genres_unselected.xml" value="0.23796296296296296" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_library.xml" value="0.24259259259259258" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_library_selector.xml" value="0.24259259259259258" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_library_unselector.xml" value="0.23796296296296296" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_mine.xml" value="0.24259259259259258" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_mine_selector.xml" value="0.24259259259259258" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_mine_unselector.xml" value="0.23796296296296296" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/slogn.xml" value="0.33" />
         <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/activity_main.xml" value="0.25407608695652173" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/assets_fragment.xml" value="0.22010869565217392" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/home_fragment.xml" value="0.2171875" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/main_fragment.xml" value="0.2171875" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/me_fragment.xml" value="0.22010869565217392" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/swap_fragment.xml" value="0.22010869565217392" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/menu/main_bottom_nav.xml" value="0.25364583333333335" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/base/src/main/res/layout/state_layout_empty.xml" value="0.22735507246376813" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/base/src/main/res/layout/state_layout_error.xml" value="0.22735507246376813" />
+        <entry key="..\:/worksapce/ArchitectureMVVM/base/src/main/res/layout/state_layout_loading.xml" value="0.22735507246376813" />
       </map>
     </option>
   </component>
