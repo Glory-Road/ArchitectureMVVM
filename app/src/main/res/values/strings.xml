@@ -6,4 +6,10 @@
     <string name="main_nav_swap">Swap</string>
     <string name="main_nav_assets">Assets</string>
     <string name="main_nav_me">Me</string>
+
+    <!--个人中心-->
+    <string name="log_in">Log In</string>
+    <string name="welcome_to_bite_stack">Welcome to Bitestack</string>
+    <string name="me_account_security"><![CDATA[Account&Security]]></string>
+    <string name="me_version">Version</string>
 </resources>

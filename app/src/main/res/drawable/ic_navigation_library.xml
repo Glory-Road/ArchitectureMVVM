@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/ic_navigation_library_selector" />
-    <item android:drawable="@drawable/ic_navigation_library_unselector" />
+    <item android:state_checked="true" android:drawable="@drawable/ic_navigation_home_selector" />
+    <item android:drawable="@drawable/ic_navigation_home_unselector" />
 </selector>

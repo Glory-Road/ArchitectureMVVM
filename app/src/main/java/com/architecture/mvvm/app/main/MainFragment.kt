@@ -8,11 +8,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.architecture.base.BaseFragment
+import com.architecture.base.extensions.viewBinding
 import com.architecture.mvvm.R
 import com.architecture.mvvm.app.assets.AssetsFragment
 import com.architecture.mvvm.app.home.HomeFragment
 import com.architecture.mvvm.app.me.MeFragment
 import com.architecture.mvvm.app.swap.SwapFragment
+import com.architecture.mvvm.databinding.HomeFragmentBinding
 import com.architecture.mvvm.databinding.MainFragmentBinding
 import kotlinx.coroutines.launch
 
@@ -21,7 +23,7 @@ import kotlinx.coroutines.launch
  *     time   : 2022/01/27
  *     desc   :
  */
-class MainFragment: BaseFragment<MainFragmentBinding>() {
+class MainFragment: BaseFragment() {
     private val homeFragment by lazy { HomeFragment() }
     private val swapFragment by lazy { SwapFragment() }
     private val assetsFragment by lazy { AssetsFragment() }
@@ -38,8 +40,10 @@ class MainFragment: BaseFragment<MainFragmentBinding>() {
 
     private val viewModel: MainViewModel by viewModels()
 
-    override fun getViewBinding(inflater: LayoutInflater, container: ViewGroup?): MainFragmentBinding {
-        return MainFragmentBinding.inflate(inflater, container, false)
+    private val binding: MainFragmentBinding by viewBinding()
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

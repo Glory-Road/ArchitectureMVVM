@@ -2,6 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200">
+    android:orientation="vertical">
 
+    <include
+        layout="@layout/item_home_banner"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimaryGray_4"/>
+
+    <include
+        layout="@layout/item_home_product_title"/>
+
+    <include
+        layout="@layout/item_home_product"/>
+
+    <include
+        layout="@layout/item_home_product"/>
+
+    <include
+        layout="@layout/item_home_product"/>
+
+    <include
+        layout="@layout/item_home_product"/>
+
+    <include
+        layout="@layout/item_home_product"/>
 </LinearLayout>
