@@ -3,40 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/chevron-right.xml" value="0.33425925925925926" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_default_user_portrait.xml" value="0.33425925925925926" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_featured.xml" value="0.24259259259259258" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_featured_selector.xml" value="0.24259259259259258" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_featured_unselector.xml" value="0.23796296296296296" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_genres.xml" value="0.24259259259259258" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_genres_selected.xml" value="0.24259259259259258" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_genres_unselected.xml" value="0.23796296296296296" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_library.xml" value="0.24259259259259258" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_library_selector.xml" value="0.24259259259259258" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_library_unselector.xml" value="0.23796296296296296" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_mine.xml" value="0.24259259259259258" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_mine_selector.xml" value="0.24259259259259258" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_mine_unselector.xml" value="0.23796296296296296" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_navigation_swap_selector.xml" value="0.23333333333333334" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/ic_product_btc.xml" value="0.23333333333333334" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/drawable/slogn.xml" value="0.33" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/activity_main.xml" value="0.25407608695652173" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/assets_fragment.xml" value="0.22010869565217392" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/home_fragment.xml" value="0.2171875" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/item_home_banner.xml" value="0.2128623188405797" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/item_home_product.xml" value="0.33" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/item_home_product_title.xml" value="0.2128623188405797" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/main_fragment.xml" value="0.2171875" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/me_fragment.xml" value="0.25" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/layout/swap_fragment.xml" value="0.22010869565217392" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/app/src/main/res/menu/main_bottom_nav.xml" value="0.25364583333333335" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/base/src/main/res/layout/state_layout_empty.xml" value="0.22735507246376813" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/base/src/main/res/layout/state_layout_error.xml" value="0.22735507246376813" />
-        <entry key="..\:/worksapce/ArchitectureMVVM/base/src/main/res/layout/state_layout_loading.xml" value="0.22735507246376813" />
+        <entry key="app/src/main/res/layout/sign_fragment.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
