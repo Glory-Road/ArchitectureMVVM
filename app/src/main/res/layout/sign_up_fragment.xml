@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="40dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_email"
+        android:textColor="@color/colorPrimaryGray_2"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:paddingHorizontal="20dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/et_normal_bg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/email_error_tips"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tips_sign_check_email_address"
+        android:textColor="@color/red"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/sign_password"
+        android:textColor="@color/colorPrimaryGray_2"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:paddingHorizontal="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/et_normal_bg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/password_error_tips"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tips_register_check_password"
+        android:textColor="@color/colorPrimaryGray_2"
+        android:textSize="12sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/sign_up"
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/btn_bg_selector"
+        android:textColor="@color/btn_text_color_selector"/>
+</LinearLayout>

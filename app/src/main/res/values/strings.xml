@@ -12,4 +12,15 @@
     <string name="welcome_to_bite_stack">Welcome to Bitestack</string>
     <string name="me_account_security"><![CDATA[Account&Security]]></string>
     <string name="me_version">Version</string>
+    <string name="me_log_out">Log out</string>
+
+    <!--登陆注册-->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Register</string>
+    <string name="tips_sign_check_email_address">Please enter an email address</string>
+    <string name="sign_email">Email</string>
+    <string name="sign_password">Password</string>
+    <string name="tips_sign_check_password">The email address or password you entered is incorrect</string>
+    <string name="sign_forgot_password">Forgot Password?</string>
+    <string name="tips_register_check_password">At least 8 characters with letters and numbers</string>
 </resources>

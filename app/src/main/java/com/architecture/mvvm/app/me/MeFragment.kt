@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.architecture.base.BaseFragment
 import com.architecture.base.extensions.viewBinding
+import com.architecture.mvvm.app.sign.SignActivity
 import com.architecture.mvvm.databinding.MeFragmentBinding
 
 /**
@@ -25,6 +26,9 @@ class MeFragment: BaseFragment() {
     }
 
     override fun setupListeners() {
+        binding.loginStatus.setOnClickListener {
+            SignActivity.start(requireContext())
+        }
     }
 
     override fun setupObservers() {
