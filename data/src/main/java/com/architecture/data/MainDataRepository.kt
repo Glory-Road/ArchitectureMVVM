@@ -13,6 +13,8 @@ class MainDataRepository(private val store: Store): MainRepository{
         return flow {
             val articles = store.remote.getArticleList()
             val domain = articles.data.map { it.toDomain() }
+
+            Log.w("WNQ", "main: ${articles.errorCode}")
             emit(HttpResult(domain))
         }
     }

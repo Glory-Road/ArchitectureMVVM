@@ -52,7 +52,7 @@ class MainFragment: BaseFragment() {
     }
 
     override fun setupViews() {
-
+        viewModel.main()
     }
 
     override fun setupListeners() {

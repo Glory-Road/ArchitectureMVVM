@@ -7,6 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="actionBarSize">48dp</item>
+        <item name="android:windowBackground">@drawable/splash_window_bg</item>
+        <item name="android:windowNoTitle">true</item>
         <!--<item name="textColorError">@color/material_red_500</item>-->
         <item name="android:actionMenuTextAppearance">@style/MyMenuTextAppearance</item>
     </style>
@@ -45,7 +47,7 @@
         <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
     </style>
 
-    <style name="MaterialTheme.TranslucentStatusBar">
+    <style name="MaterialThemeTranslucentStatusBar" parent="MaterialTheme">
     </style>
 
     <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">

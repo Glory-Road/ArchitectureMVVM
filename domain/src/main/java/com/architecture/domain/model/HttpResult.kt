@@ -5,4 +5,4 @@ package com.architecture.domain.model
  *     time   : 2022/01/26
  *     desc   : 网络请求返回Model基类封装
  */
-class HttpResult<T>(val data: T): BaseModel()
+class HttpResult<T>(val data: T): Message()

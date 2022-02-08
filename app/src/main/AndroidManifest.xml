@@ -17,8 +17,8 @@
             android:exported="false" />
         <activity
             android:name=".app.main.MainActivity"
-            android:exported="true"
-            android:theme="@style/MaterialTheme.TranslucentStatusBar">
+            android:theme="@style/MaterialThemeTranslucentStatusBar.Splash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

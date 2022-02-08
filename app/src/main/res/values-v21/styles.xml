@@ -6,10 +6,15 @@
         <item name="android:autofilledHighlight" tools:targetApi="o">@color/transparent</item>
     </style>
 
-    <style name="MaterialTheme.TranslucentStatusBar">
+    <style name="MaterialThemeTranslucentStatusBar" parent="MaterialTheme">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:autofilledHighlight" tools:targetApi="o">@color/transparent</item>
+    </style>
+
+    <style name="MaterialThemeTranslucentStatusBar.Splash">
+        <item name="android:windowBackground">@drawable/splash_window_bg</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>

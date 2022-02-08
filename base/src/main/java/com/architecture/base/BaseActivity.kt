@@ -7,8 +7,15 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import com.architecture.base.utils.SystemUiUtils
 
 open class BaseActivity : AppCompatActivity() {
+
+    override fun onResume() {
+        super.onResume()
+        SystemUiUtils.makeTransparentStatusBar(window)
+        SystemUiUtils.makeStatusBarThemeLight(window, true)
+    }
 
     override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
         ev?.let {

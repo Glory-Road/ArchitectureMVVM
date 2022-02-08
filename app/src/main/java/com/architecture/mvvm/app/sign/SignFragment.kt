@@ -33,7 +33,7 @@ class SignFragment: BaseFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         return binding.root
     }
     override fun setupViews() {
@@ -57,14 +57,13 @@ class SignFragment: BaseFragment() {
         lifecycleScope.launch {
             whenCreated {
                 viewModel.signPage.collectLatest { page ->
-                    changeUi(page)
+                    changeUiPage(page)
                 }
             }
         }
-
     }
 
-    private fun changeUi(page: Int) {
+    private fun changeUiPage(page: Int) {
         binding.titleSignIn.isSelected = PAGE_SIGN_IN == page
         binding.titleSignUp.isSelected = PAGE_SIGN_UP == page
         binding.titleSignIn.paint.isFakeBoldText = PAGE_SIGN_IN == page
