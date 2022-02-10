@@ -18,7 +18,12 @@
         <entry key="..\:/Work/SourceRepository/ArchitectureMVVM/app/src/main/res/layout/sign_in_layout.xml" value="0.33" />
         <entry key="..\:/Work/SourceRepository/ArchitectureMVVM/app/src/main/res/layout/sign_up_fragment.xml" value="0.2231722958529286" />
         <entry key="..\:/Work/SourceRepository/ArchitectureMVVM/app/src/main/res/layout/sign_up_layout.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/sign_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/splash_window_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/assets_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/home_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/main_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/sign_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/swap_fragment.xml" value="0.1" />
       </map>
     </option>
   </component>
