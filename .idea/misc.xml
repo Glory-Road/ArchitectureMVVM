@@ -18,12 +18,54 @@
         <entry key="..\:/Work/SourceRepository/ArchitectureMVVM/app/src/main/res/layout/sign_in_layout.xml" value="0.33" />
         <entry key="..\:/Work/SourceRepository/ArchitectureMVVM/app/src/main/res/layout/sign_up_fragment.xml" value="0.2231722958529286" />
         <entry key="..\:/Work/SourceRepository/ArchitectureMVVM/app/src/main/res/layout/sign_up_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/drawable/bg_assets_btn.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/bg_assets_header.xml" value="0.106" />
+        <entry key="app/src/main/res/drawable/bg_label.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_label_corner.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_label_right_angle.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_qr_code.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_stroke.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/bg_stroke_gray.xml" value="0.2195" />
+        <entry key="app/src/main/res/drawable/bg_stroke_light.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/bg_swap_item.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/bg_swap_light.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/bg_top_corner_white.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/btn_bg_disable.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/btn_bg_enable.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/btn_bg_selector.xml" value="0.171" />
+        <entry key="app/src/main/res/drawable/et_bg_default.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/et_focus_bg.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/et_normal_bg.xml" value="0.1295" />
+        <entry key="app/src/main/res/drawable/ic_arrow_down.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/ic_arrow_left.xml" value="0.106" />
+        <entry key="app/src/main/res/drawable/ic_arrow_left_white.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/ic_arrow_receive.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/ic_arrow_up.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/ic_equel_.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/ic_net_error.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1945" />
         <entry key="app/src/main/res/drawable/splash_window_bg.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/assets_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_earn.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_receive_detail.xml" value="0.32187652587890625" />
+        <entry key="app/src/main/res/layout/activity_send_detail.xml" value="0.22692565917968754" />
+        <entry key="app/src/main/res/layout/activity_send_list.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/activity_sign.xml" value="0.13697916666666668" />
+        <entry key="app/src/main/res/layout/activity_subscribe.xml" value="0.26268115942028986" />
+        <entry key="app/src/main/res/layout/assets_fragment.xml" value="0.2519180297851562" />
+        <entry key="app/src/main/res/layout/dialog_swap_confirm.xml" value="0.26268115942028986" />
+        <entry key="app/src/main/res/layout/dialog_swap_pick_product.xml" value="0.26268115942028986" />
+        <entry key="app/src/main/res/layout/earn_fragment.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_receive.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_redeem.xml" value="0.26268115942028986" />
         <entry key="app/src/main/res/layout/home_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_home_product.xml" value="0.26268115942028986" />
+        <entry key="app/src/main/res/layout/item_receive_product.xml" value="0.3392038981119792" />
+        <entry key="app/src/main/res/layout/item_send_product.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/main_fragment.xml" value="0.1" />
         <entry key="app/src/main/res/layout/sign_fragment.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/swap_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/sign_in_fragment.xml" value="0.26268115942028986" />
+        <entry key="app/src/main/res/layout/swap_fragment.xml" value="0.24181365966796875" />
+        <entry key="base/src/main/res/layout/activity_base.xml" value="0.24427083333333333" />
       </map>
     </option>
   </component>

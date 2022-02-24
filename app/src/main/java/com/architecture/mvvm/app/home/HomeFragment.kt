@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.architecture.base.BaseFragment
 import com.architecture.base.extensions.viewBinding
+import com.architecture.mvvm.app.earn.EarnActivity
 import com.architecture.mvvm.databinding.HomeFragmentBinding
 import com.architecture.mvvm.databinding.SwapFragmentBinding
 
@@ -26,6 +27,9 @@ class HomeFragment: BaseFragment() {
     }
 
     override fun setupListeners() {
+        binding.productItem1.root.setOnClickListener {
+            EarnActivity.start(requireContext())
+        }
     }
 
     override fun setupObservers() {

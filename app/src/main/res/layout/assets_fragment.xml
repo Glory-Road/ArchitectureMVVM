@@ -2,7 +2,253 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_assets_header">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Overview"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@+id/overview"
+                app:layout_constraintTop_toTopOf="parent"
+                android:alpha="0.6"
+                android:text="Funds"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_scan"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:alpha="0.6"
+                android:text="Estimated Value"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                app:layout_constraintStart_toEndOf="@+id/title"
+                app:layout_constraintTop_toTopOf="@+id/title"
+                app:layout_constraintBottom_toBottomOf="@+id/title"
+                android:src="@drawable/ic_eye"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:text="0.00"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@drawable/ic_equal"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/value"
+                app:layout_constraintBottom_toBottomOf="@+id/value"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:alpha="0.6"
+                android:text="0.00 BTC"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/available_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/value"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:alpha="0.6"
+                android:text="Available Balance"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/available_balance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/available_balance"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="0.00"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frozen_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                app:layout_constraintStart_toEndOf="@+id/available_balance"
+                app:layout_constraintTop_toBottomOf="@+id/value"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:alpha="0.6"
+                android:text="Frozen Balance"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frozen_balance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/frozen_balance"
+                app:layout_constraintTop_toBottomOf="@+id/frozen_balance"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="0.00"/>
+            
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_receive"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="31dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Receive"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@drawable/bg_assets_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_send"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frozen_balance_value"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_send"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="31dp"
+                android:gravity="center"
+                android:background="@drawable/bg_assets_btn"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_receive"
+                app:layout_constraintTop_toBottomOf="@+id/frozen_balance_value"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/all_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="3dp"
+            android:background="@drawable/bg_stroke_light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorAccentDark"
+            android:text="All Coins"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            android:textSize="14sp"
+            android:alpha="0.4"
+            android:textColor="#262626"
+            android:text="Show holdings only"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="3dp"
+            android:drawablePadding="2dp"
+            android:drawableStart="@drawable/ic_search"
+            android:background="@drawable/bg_stroke_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="23dp"
+            android:textSize="14sp"
+            android:textColor="#66222222"
+            android:text="Coin"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        layout="@layout/item_home_product"/>
+
+    <include
+        layout="@layout/item_home_product"/>
+
+    <include
+        layout="@layout/item_home_product"/>
+
+    <include
+        layout="@layout/item_home_product"/>
+
+    <include
+        layout="@layout/item_home_product"/>
 </LinearLayout>

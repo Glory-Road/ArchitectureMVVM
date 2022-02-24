@@ -19,11 +19,22 @@ abstract class BaseDialogFragment<VB: ViewBinding>: DialogFragment() {
     private var _binding: VB? = null
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        _binding = getViewBinding()
+        _binding = getViewBinding(inflater, container)
         return binding.root
     }
 
-    abstract fun getViewBinding(): VB
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupViews()
+        setupListeners()
+        setupObservers()
+    }
+
+    protected abstract fun setupViews()
+    protected abstract fun setupListeners()
+    protected abstract fun setupObservers()
+
+    abstract fun getViewBinding(inflater: LayoutInflater, container: ViewGroup?): VB
 
     protected fun checkLogin() {
 

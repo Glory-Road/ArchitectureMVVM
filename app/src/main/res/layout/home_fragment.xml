@@ -16,6 +16,7 @@
         layout="@layout/item_home_product_title"/>
 
     <include
+        android:id="@+id/product_item_1"
         layout="@layout/item_home_product"/>
 
     <include

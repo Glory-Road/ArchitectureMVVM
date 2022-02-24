@@ -26,6 +26,13 @@ class SwapFragment: BaseFragment() {
     }
 
     override fun setupListeners() {
+        binding.icSwapFrom.setOnClickListener {
+            SwapPickProductDialog().show(childFragmentManager, "SwapPickProductDialog")
+        }
+
+        binding.btnSwap.setOnClickListener {
+            SwapConfirmDialog().show(childFragmentManager, "SwapConfirmDialog")
+        }
     }
 
     override fun setupObservers() {

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topPanel"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="bottom"
+        app:layout_behavior="com.architecture.base.widget.HeaderFitStatusBarBehavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:contentInsetStartWithNavigation="0dp"
+                app:navigationIcon="@drawable/ic_arrow_left" >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/send"
+                    android:textAppearance="@style/Toolbar.TitleText"/>
+            </androidx.appcompat.widget.Toolbar>
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_anchor="@id/topPanel"
+        app:layout_behavior="com.architecture.base.widget.BelowAnchorBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/product_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_product_btc"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Coin"
+                android:textColor="@color/colorPrimaryBlack"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/product_icon"
+                app:layout_constraintStart_toEndOf="@+id/product_icon"
+                app:layout_constraintTop_toTopOf="@+id/product_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:text="Choose coin"
+                android:textColor="@color/colorPrimaryGray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/product_icon"
+                app:layout_constraintEnd_toStartOf="@+id/arrow_right"
+                app:layout_constraintTop_toTopOf="@+id/product_icon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_arrow_right"
+                app:layout_constraintBottom_toBottomOf="@+id/product_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/product_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Transfer network"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/product_icon"
+            app:layout_constraintEnd_toStartOf="@+id/arrow_right"
+            app:layout_constraintTop_toTopOf="@+id/product_icon" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryGray_4"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
+                android:text="USDT-TRC20"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:background="@color/colorPrimaryGray_4"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
+                android:text="USDT-ERC20"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="12sp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:background="@color/colorPrimaryGray_4"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
+                android:text="USDT-Omni"
+                android:textColor="@color/colorAccentDark"
+                android:textSize="12sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryGray_3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21dp"
+            android:text="Address"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/product_icon"
+            app:layout_constraintEnd_toStartOf="@+id/arrow_right"
+            app:layout_constraintTop_toTopOf="@+id/product_icon" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/et_normal_bg"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Note"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/product_icon"
+            app:layout_constraintEnd_toStartOf="@+id/arrow_right"
+            app:layout_constraintTop_toTopOf="@+id/product_icon" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/et_normal_bg"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Amount"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/product_icon"
+            app:layout_constraintEnd_toStartOf="@+id/arrow_right"
+            app:layout_constraintTop_toTopOf="@+id/product_icon" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/et_normal_bg"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Fee"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/product_icon"
+            app:layout_constraintEnd_toStartOf="@+id/arrow_right"
+            app:layout_constraintTop_toTopOf="@+id/product_icon" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="21dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200.2"
+                android:textColor="@color/colorPrimaryBlack"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="BTC"
+                android:textColor="@color/colorPrimaryBlack"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryGray_3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/sign_in"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/btn_bg_enable"
+            android:textColor="@color/btn_text_color_selector"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import com.architecture.base.BaseFragment
 import com.architecture.base.extensions.viewBinding
 import com.architecture.mvvm.databinding.AssetsFragmentBinding
-import com.architecture.mvvm.databinding.HomeFragmentBinding
-import com.architecture.mvvm.databinding.SwapFragmentBinding
 
 /**
  *     author : wnq
@@ -27,6 +25,12 @@ class AssetsFragment: BaseFragment() {
     }
 
     override fun setupListeners() {
+        binding.btnReceive.setOnClickListener {
+            ReceiveListActivity.start(requireContext())
+        }
+        binding.btnSend.setOnClickListener {
+            SendListActivity.start(requireContext())
+        }
     }
 
     override fun setupObservers() {
