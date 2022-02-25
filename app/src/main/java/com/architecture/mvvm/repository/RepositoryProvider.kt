@@ -1,9 +1,9 @@
 package com.architecture.mvvm.repository
 
 import android.content.Context
-import com.architecture.data.MainDataRepository
+import com.architecture.data.MainRepository
+import com.architecture.data.SignRepository
 import com.architecture.data.Store
-import com.architecture.domain.MainRepository
 import com.architecture.mvvm.AppConfig
 
 /**
@@ -18,5 +18,7 @@ object RepositoryProvider {
         store = Store(context, AppConfig.BASE_URL)
     }
 
-    fun mainRepository(): MainRepository = MainDataRepository(store)
+    fun mainRepository(): MainRepository = MainRepository(store)
+
+    fun signRepository(): SignRepository = SignRepository(store)
 }

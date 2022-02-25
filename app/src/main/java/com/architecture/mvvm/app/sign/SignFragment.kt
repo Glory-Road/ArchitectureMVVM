@@ -20,6 +20,7 @@ import com.architecture.base.BaseFragment
 import com.architecture.base.extensions.viewBinding
 import com.architecture.mvvm.R
 import com.architecture.mvvm.databinding.SignFragmentBinding
+import com.architecture.mvvm.widget.LoadingDialog
 import com.blankj.utilcode.util.RegexUtils
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -29,6 +30,8 @@ class SignFragment: BaseFragment() {
     private val binding: SignFragmentBinding by viewBinding()
     private val viewModel: SignViewModel by viewModels()
 
+    private val mLoadingDialog by lazy { LoadingDialog(requireContext()) }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -36,6 +39,16 @@ class SignFragment: BaseFragment() {
     ): View {
         return binding.root
     }
+
+    override fun showLoading() {
+        mLoadingDialog.setMessage("sign in")
+        mLoadingDialog.show()
+    }
+
+    override fun dismissLoading() {
+        mLoadingDialog.dismiss()
+    }
+
     override fun setupViews() {
     }
 

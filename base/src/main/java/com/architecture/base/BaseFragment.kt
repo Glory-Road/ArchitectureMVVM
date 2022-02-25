@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 
-abstract class BaseFragment: Fragment() {
+abstract class BaseFragment: Fragment(), IUiView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -19,5 +19,11 @@ abstract class BaseFragment: Fragment() {
 
     protected fun checkLogin() {
 
+    }
+
+    override fun showLoading() {
+    }
+
+    override fun dismissLoading() {
     }
 }
